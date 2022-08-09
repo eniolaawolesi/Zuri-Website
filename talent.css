@@ -1,0 +1,473 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    background-color: white;
+    font-size: 16px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0px;
+    left: auto;
+    right: 0px;
+    z-index: 1100;
+    color: rgb(255, 255, 255);
+    background-color: #fff;
+    padding: 0 94px;
+}
+header > .logo{
+    margin-right: auto;
+}
+.headings{
+    display: flex;
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+    margin: 16px 0;
+    width: 300px;
+}
+
+nav a{
+    margin-right: 48px;
+    text-decoration: none;
+    color: #161617;
+}
+
+.button{
+    margin-top: 30px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+.button button{
+    min-width: 64px;
+    padding: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: none;
+}
+button.button1{
+    background-color: #e7332b;
+    border-radius: 0 0 8px 0;
+    color: #fff;
+    font-weight: 400;
+    line-height: 19px;
+    padding: 11px 50px;
+    border: none;
+    cursor: pointer;
+}
+button.button2{
+    background-color: #585858;
+    border-radius: 0 0 8px 0;
+    color: #fff;
+    font-weight: 400;
+    line-height: 19px;
+    padding: 11px 50px;
+    border: none;
+}
+.red{
+    color: rgb(231, 51, 43)
+}
+section{
+    width: 100%;
+    margin: 20px auto;
+    padding: 0 calc(15%/2);
+    /* background-color: aqua; */
+}
+.home{
+    display: flex;
+    padding-top: 150px;
+    padding-bottom: 100px;
+
+}
+.pop-up {
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    left: 50%;
+    padding: 70px 44px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    width: 35%;
+}
+.impact{
+    display: flex;
+    background-image: url(https://talent.zuri.team/static/media/bgsection2.063bd869082548bafa74.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.left{
+    width: 50%;
+    margin: auto;
+    position: relative;
+}
+.home-details, .impact-head {
+    padding-top: 15px;
+    width: 75%;
+    font-size: 19px;
+    color: #787878;
+    font-weight: 400;
+}
+.bold{
+    font-weight: bold;
+    font-size: 19px;
+
+}
+.grey{
+    color: #787878;
+    font-size: 19px;
+    line-height: 22px;
+    padding-top: 10px;
+}
+.countries{
+    display: flex;
+    margin-top: 10px;
+}
+.countries > img{
+    width: 55px;
+    margin-right: 16px;
+    padding: 7px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+.left > .button{
+    justify-content: flex-start;
+}
+.thick{
+    position:absolute;
+    width: 100px;
+    right: 40px;
+    top: 20px;
+}
+
+.head{
+    font-size: 40px;
+    font-weight: 700;
+}
+.right{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+.right > img{
+    width: 80%;
+}
+.line{
+    position:absolute;
+    width: 245px;
+    right: -15%;
+    top: 50%;
+    z-index: -3;
+}
+.talents{
+    margin-top: 80px;
+}
+.t-work{
+    margin-bottom: 50px;
+}
+.talents > p{
+    width: 400px;
+}
+.talent, .work{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+.talent > p, .work > p{
+    width: 25%;
+    margin-right:10px ;
+    background-color: #fff;
+    border-radius: 8px;
+    color: #787878;
+    font-size: 18px;
+    font-weight: 400;
+    height: 100%;
+    box-shadow: 0 8px 30px hsla(0, 0%, 48%, .16);
+    text-align: center;
+    padding: 5px;
+    line-height: 33px;
+    transition: transform .3s ease;
+}
+.talent > p:hover, .work > p:hover{
+    transform: translateY(-15px);
+    transform: tr
+    /* transform-origin: top; */
+}
+.why-hire{
+    background-color: rgb(255, 248, 229);
+    padding-bottom: 80px;
+    width: 100%;
+    padding-top: 70px;
+}
+.why-hire > p {
+    text-align: center;
+    padding: 50px 0;
+}
+.reasons{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.reasons .reason{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    text-align: center;
+    width: calc(90%/3);
+    padding: 30px;
+    margin-top: 20px;
+    margin-right:calc(5%/6);
+}
+.reasons .reason:hover{
+    background-color: black;
+    color:#fff;
+}
+.reason img{
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+footer{
+    width: 100%;
+    background-color: rgb(22, 22, 23);
+    padding-top: 80px;
+}
+footer > .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-left: 16px;
+}
+
+.top > .logo{
+    display: flex;
+    width: 50%;
+    justify-content: center
+}
+.top > .logo > a .img{
+    width: 80%;
+}
+.social-media{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+.social-media > a img{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 5px 0 5px 15px;
+}
+
+footer > .bottom{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+    justify-content: space-between;
+}
+
+.bottom > p {
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: .01em;
+    line-height: 140%;
+}
+.bottom > a{
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width:899px){
+     nav{
+        display: none;
+    }
+}
+@media screen and (max-width:900px), (max-width:1100px) {
+   
+    .home{
+        display: block;
+     }
+     .home > .left{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+     }
+    .home > .right{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+     .right .line{
+        display: none;
+     }
+     .impact .left{
+        text-align: center;
+     }
+     .home-details, .impact-head{
+        width: 90%;
+     }
+     .head{
+        text-align: center;
+     }
+     .talent, .work{
+        align-items: center;
+     }
+     .talent > p{
+        width: 23%;
+        font-size: 20px;
+        
+     }
+     .work > p{
+        width: 15%;
+        font-size: 20px
+        
+     }
+     .reasons .reason{
+        width: 48%;
+        margin-right: 2%
+     }
+     .reasons .reason:last-child{
+        width: 98%;
+     }
+}
+@media screen and (max-width:700px){
+    .impact{
+        display: block;
+    }
+    .right{
+        padding-top: 100px;
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        /* background-color: #161617; */
+        margin: 0 auto;
+    }
+    .talent > p{
+        width: 30%;
+        margin: 15px;
+        font-size: 20px;
+        
+     }
+     .work > p{
+        width: 30%;
+        margin: 15px;
+        font-size: 20px
+        
+     }
+     .reasons .reason{
+       font-size: 20px;
+     }
+     
+}
+@media screen and (max-width:300px), (max-width:400px), (max-width:500px) {
+    header {
+       display: flex;
+       padding: 20px;
+    }
+    .impact, .home{
+        justify-content: center;
+        width: 100%;
+    }
+    .impact > .left, .impact > .right, .home > .left, .home > .right{
+        width: 100%;
+        margin: auto;
+        padding: 20px 0;
+    }
+    .head {
+    font-size: 35px;
+    font-weight: 700;
+    }
+    .home-details, .impact-head {
+    width: 100%;
+    }
+    .thick {
+    position: absolute;
+    width: 100px;
+    right: 10px;
+    top: 60px;
+    }
+    .talents > p {
+    max-width: 100%;
+    }
+    .countries{
+        max-width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .countries > img {
+    width: 50px;
+    }
+    .talent, .work{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+  .talent > p, .work > p{
+        padding: 0;
+        margin: 0;
+        width: 46%;
+        padding: 10px;
+        font-size: 20px;
+        margin:10px 2%;
+     }
+     .reasons .reason{
+        width: 100%;
+     }
+     footer > .top, footer > .bottom{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+     }
+     footer .logo {
+        padding-bottom: 10px;
+     }
+     .cc{
+        order: 2;
+        margin-top: 20px;
+        margin-bottom: 10px;
+     }
+     button.button1,  button.button2 {
+    line-height: 19px;
+    padding: 8px 25px;
+    border: none;
+    cursor: pointer;
+}
+.button button {
+    padding: 20px;
+    width: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+    border: none;
+}
+}
